@@ -1,0 +1,60 @@
+:root {
+  /* Colors - Refined Textile/Export Palette */
+  --color-primary: #B38B59;
+  /* Warm gold / textile tone */
+  --color-primary-dark: #9A774B;
+
+  --color-dark: #1E1E1E;
+  --color-dark-light: #2A2A2A;
+
+  --color-background: #FFFFFF;
+  --color-section-light: #F7F7F7;
+
+  --color-text-main: #444444;
+  --color-text-heading: #1E1E1E;
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #777777;
+
+  /* Typography */
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-serif: 'Playfair Display', Georgia, serif;
+
+  /* Font Scale */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-h3: 24px;
+  --font-size-h2: 36px;
+  --font-size-h1: 48px;
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Spacing System */
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  /* Standard section padding */
+  --spacing-96: 96px;
+
+  /* Layout */
+  --container-width: 1200px;
+
+  /* Elevation (Soft Shadows) */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.08);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  /* Standard for cards */
+  --radius-lg: 10px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}

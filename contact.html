@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Art India Tex for wholesale custom textile manufacturing inquiries and catalogs.">
+    <title>Contact Us | Art India Tex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="src/styles/variables.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <style>
+        .page-header {
+            padding: 160px 0 var(--spacing-80);
+            background-color: var(--color-section-light);
+            text-align: center;
+            border-bottom: 1px solid #EAEAEA;
+        }
+
+        .contact-card {
+            background-color: var(--color-background);
+            padding: var(--spacing-48);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+            border: 1px solid #EAEAEA;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-32);
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-section-light);
+            color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: var(--spacing-24);
+            flex-shrink: 0;
+        }
+
+        .contact-info-text {
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+        }
+
+        .map-container {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 250px;
+            margin-top: var(--spacing-32);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #EAEAEA;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gem logo-icon"></i>
+                <span>Art India Tex</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Company</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="certificates.html" class="nav-link">Certifications</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container fade-up">
+            <h1 class="mb-16">Contact Our Export Team</h1>
+            <p class="text-muted max-w-2xl mx-auto" style="font-size: 18px;">Get in touch for wholesale pricing, bespoke
+                manufacturing, or to request our complete product catalog.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-2 gap-64 fade-up">
+
+                <!-- Contact Form -->
+                <div class="contact-card">
+                    <h2 class="mb-16">Request a Quote</h2>
+                    <p class="text-muted mb-32">Fill out the form below with your requirements. We typically respond
+                        within 24 hours.</p>
+
+                    <form action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Inquiry sent successfully! We will contact you shortly.');">
+                        <div class="grid grid-cols-2 gap-16 mb-24">
+                            <div>
+                                <label class="form-label" for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" required>
+                            </div>
+                            <div>
+                                <label class="form-label" for="lastName">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-24">
+                            <label class="form-label" for="email">Business Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group mb-24">
+                            <label class="form-label" for="company">Company / Country</label>
+                            <input type="text" id="company" class="form-control">
+                        </div>
+
+                        <div class="form-group mb-32">
+                            <label class="form-label" for="inquiry">Your Inquiry</label>
+                            <textarea id="inquiry" class="form-control" rows="5"
+                                placeholder="Please detail the products, quantities, or custom designs you are interested in..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request <i
+                                class="fa-solid fa-arrow-right ml-8"></i></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="mb-32">Corporate Office & Factory</h2>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-info-text">
+                            <h4 class="mb-8 font-semibold text-dark">Headquarters / Weaving Units</h4>
+                            <p class="text-muted">V-306, Street No. 22<br>Vijay Park Maujpur, (Near Cantbury
+                                School)<br>Delhi - 110053, India.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-info-text">
+                            <h4 class="mb-8 font-semibold text-dark">Direct Phone lines</h4>
+                            <p class="text-muted">Corporate: +91 11 22910705<br>Mobile/WhatsApp: +91 9136741997<br><span
+                                    class="text-small">Contact Person: Laeeq A. Ansari</span></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-info-text">
+                            <h4 class="mb-8 font-semibold text-dark">Digital Communication</h4>
+                            <p class="text-muted">artindiatex@artindiatex.com<br>laeeq.ansari@artindiatex.com<br>Skype:
+                                artindia1980</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container flex items-center justify-center bg-gray-100"
+                        style="background-color: var(--color-section-light);">
+                        <div class="text-center text-muted p-24">
+                            <i class="fa-solid fa-map-location-dot mb-16"
+                                style="color: var(--color-primary); font-size: 32px;"></i>
+                            <p class="font-medium">Map Location (Delhi, India)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer (4 Columns) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-4 gap-32">
+                <div>
+                    <a href="index.html" class="logo mb-24" style="color: white;">
+                        <i class="fa-solid fa-gem logo-icon"></i>
+                        <span>Art India Tex</span>
+                    </a>
+                    <p>Premium Manufacturer and Exporter of exclusive handmade rugs, carpets, and home textiles since
+                        1980.</p>
+                </div>
+                <div>
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Tufted Carpets</a></li>
+                        <li><a href="products.html">Leather & Woolen Rugs</a></li>
+                        <li><a href="products.html">Throws & Bed Covers</a></li>
+                        <li><a href="products.html">Cushions & Curtains</a></li>
+                        <li><a href="products.html">Custom Textiles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Company</a></li>
+                        <li><a href="certificates.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>V-306, Street No. 22, Vijay Park Maujpur, Delhi - 110053, India</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91-11-22910705<br>+91-9136741997</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>artindiatex@artindiatex.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Art India Tex. Designed for Global Export.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

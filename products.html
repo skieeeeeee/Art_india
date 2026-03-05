@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Art India Tex collections: Premium Handmade Rugs, Carpets, Throws, Cushions, and Home Textiles.">
+    <title>Collections | Art India Tex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="src/styles/variables.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <style>
+        .page-header {
+            padding: 160px 0 var(--spacing-80);
+            background-color: var(--color-section-light);
+            text-align: center;
+            border-bottom: 1px solid #EAEAEA;
+        }
+
+        .filter-btn {
+            padding: var(--spacing-8) var(--spacing-24);
+            background: none;
+            border: 1px solid #EAEAEA;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            transition: all var(--transition-fast);
+            font-size: var(--font-size-sm);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--color-dark);
+            color: var(--color-text-light);
+            border-color: var(--color-dark);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--spacing-32);
+        }
+
+        /* Product Card Strict Style overrides */
+        .product-card {
+            border: 1px solid #EAEAEA;
+            background: var(--color-background);
+            border-radius: var(--radius-md);
+            /* 8px/10px */
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            /* Soft shadow */
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            /* Lift slightly on hover */
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-img-wrap {
+            aspect-ratio: 4/3;
+            /* Consistent aspect ratio */
+            overflow: hidden;
+            background-color: #F1F1F1;
+        }
+
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .product-card:hover .product-img-wrap img {
+            transform: scale(1.05);
+            /* Image zoom inside container on hover */
+        }
+
+        .product-info {
+            padding: var(--spacing-24);
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .btn-view {
+            width: 100%;
+            padding: var(--spacing-8) var(--spacing-16);
+            font-size: var(--font-size-sm);
+            margin-top: var(--spacing-16);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gem logo-icon"></i>
+                <span>Art India Tex</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Company</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="certificates.html" class="nav-link">Certifications</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container fade-up">
+            <h1 class="mb-16">Export Product Catalog</h1>
+            <p class="text-muted text-small max-w-2xl mx-auto" style="font-size: 18px;">Discover our exclusive range of
+                high-quality handmade textiles, tailored for international wholesale and bespoke orders.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+
+            <div class="text-center mb-48 fade-up">
+                <div class="flex flex-wrap justify-center gap-16">
+                    <button class="filter-btn active">All Products</button>
+                    <button class="filter-btn">Rugs & Carpets</button>
+                    <button class="filter-btn">Throws & Covers</button>
+                    <button class="filter-btn">Cushions</button>
+                    <button class="filter-btn">Custom Textiles</button>
+                </div>
+            </div>
+
+            <div class="products-grid fade-up" id="productGrid">
+                <!-- Products generated dynamically via JS below -->
+            </div>
+
+            <div class="text-center mt-64 fade-up p-32"
+                style="background-color: var(--color-section-light); border-radius: var(--radius-md);">
+                <h3 class="mb-16" style="font-size: 24px;">Need customized patterns or dimensions?</h3>
+                <p class="text-muted mb-32">We offer bespoke manufacturing. Share your requirements and we will send you
+                    a detailed quote.</p>
+                <a href="contact.html" class="btn btn-primary">Request Custom Catalog</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. Footer (4 Columns) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-4 gap-32">
+                <!-- Col 1: Company -->
+                <div>
+                    <a href="index.html" class="logo mb-24" style="color: white;">
+                        <i class="fa-solid fa-gem logo-icon"></i>
+                        <span>Art India Tex</span>
+                    </a>
+                    <p>Premium Manufacturer and Exporter of exclusive handmade rugs, carpets, and home textiles since
+                        1980.</p>
+                </div>
+
+                <!-- Col 2: Products -->
+                <div>
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Tufted Carpets</a></li>
+                        <li><a href="products.html">Leather & Woolen Rugs</a></li>
+                        <li><a href="products.html">Throws & Bed Covers</a></li>
+                        <li><a href="products.html">Cushions & Curtains</a></li>
+                        <li><a href="products.html">Custom Textiles</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Company</a></li>
+                        <li><a href="certificates.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>V-306, Street No. 22, Vijay Park Maujpur, Delhi - 110053, India</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91-11-22910705<br>+91-9136741997</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>artindiatex@artindiatex.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Art India Tex. Designed for Global Export.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productGrid = document.getElementById('productGrid');
+            let html = '';
+
+            // Loop for 22 images
+            for (let i = 1; i <= 22; i++) {
+                const num = i.toString().padStart(2, '0');
+                html += `
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <img src="assets/images/thumbs/${num}.jpg" alt="Art India Tex Collection ${num}" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h4 class="mb-8" style="font-family: var(--font-family-sans); font-size: 18px; color: var(--color-dark);">Design AI-${num}</h4>
+                            <p class="text-sm text-muted mb-0">Premium Export Quality</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-dark btn-view">View Product</a>
+                    </div>
+                </div>`;
+            }
+
+            if (productGrid) {
+                productGrid.innerHTML = html;
+            }
+        });
+    </script>
+</body>
+
+</html>

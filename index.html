@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Art India Tex - Premium Textile Manufacturer & Exporter from India.">
+  <title>Art India Tex | Professional Textile Manufacturing & Export</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="src/styles/variables.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+
+  <style>
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+      background-image: url('assets/images/01.jpg');
+      background-size: cover;
+      background-position: center;
+      color: var(--color-text-light);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(30, 30, 30, 0.85) 0%, rgba(30, 30, 30, 0.5) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      color: var(--color-text-light);
+    }
+
+    .hero p {
+      font-size: var(--font-size-h3);
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: var(--spacing-48);
+      max-width: 600px;
+    }
+
+    /* Process Icons */
+    .process-icon-box {
+      width: 64px;
+      height: 64px;
+      background-color: var(--color-section-light);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: var(--color-primary);
+      margin-bottom: var(--spacing-24);
+    }
+
+    /* Categories */
+    .category-card {
+      position: relative;
+      height: 350px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      group: hover;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-normal);
+    }
+
+    .category-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .category-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(30, 30, 30, 0.9) 0%, rgba(30, 30, 30, 0) 100%);
+      display: flex;
+      align-items: flex-end;
+      padding: var(--spacing-32);
+    }
+
+    .category-title {
+      color: var(--color-text-light);
+      margin: 0;
+      transform: translateY(10px);
+      transition: transform var(--transition-fast);
+    }
+
+    .category-card:hover .category-title {
+      transform: translateY(0);
+    }
+
+    /* Highlight List */
+    .highlight-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: var(--spacing-16);
+      font-size: var(--font-size-base);
+      color: var(--color-text-main);
+    }
+
+    .highlight-list i {
+      color: var(--color-primary);
+      margin-top: 4px;
+      margin-right: var(--spacing-16);
+      font-size: 18px;
+    }
+
+    /* Product Cards */
+    .product-card {
+      border: 1px solid #EAEAEA;
+      background: var(--color-background);
+    }
+
+    .product-img-wrap {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-normal);
+    }
+
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.03);
+    }
+
+    .product-info {
+      padding: var(--spacing-24);
+      text-align: center;
+    }
+
+    /* CTA Section */
+    .cta-banner {
+      background-image: linear-gradient(rgba(179, 139, 89, 0.95), rgba(179, 139, 89, 0.95)), url('assets/images/bg.gif');
+      color: var(--color-text-light);
+    }
+
+    .cta-banner h2 {
+      color: var(--color-text-light);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-gem logo-icon"></i>
+        <span>Art India Tex</span>
+      </a>
+      <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Company</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="certificates.html" class="nav-link">Certifications</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content fade-up">
+      <h1>Premium Handmade Rugs & Home Furnishings</h1>
+      <p>Manufacturers & Exporters of high-quality Rugs, Cushions, Throws and Custom Home Textiles based in India.</p>
+      <div class="flex gap-16">
+        <a href="products.html" class="btn btn-primary">Explore Collection</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. About Company -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-2 gap-64 items-center fade-up">
+        <div>
+          <img src="assets/images/03.jpg" alt="Art India Tex Manufacturing"
+            style="border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+        <div>
+          <h4 class="text-primary text-small mb-16 uppercase tracking-wider font-semibold">Our Heritage</h4>
+          <h2>Excellence in Export Grade Manufacturing</h2>
+          <p class="mb-24 text-muted">Established in 1980, Art India Tex has grown to become a leading manufacturer and
+            exporter of exclusive rugs, carpets, and an extensive range of home textile products. Nestled in Uttar
+            Pradesh, we blend traditional techniques with modern quality standards.</p>
+
+          <ul class="highlight-list mb-32">
+            <li><i class="fa-solid fa-check-circle"></i> High quality handmade products</li>
+            <li><i class="fa-solid fa-check-circle"></i> Export oriented production with 160 active looms</li>
+            <li><i class="fa-solid fa-check-circle"></i> Strict ethical, child-labor free manufacturing</li>
+            <li><i class="fa-solid fa-check-circle"></i> Trusted by global clients across Europe & Americas</li>
+          </ul>
+          <a href="about.html" class="btn btn-outline-dark">Read Our Story <i class="fa-solid fa-arrow-right"
+              style="margin-left: 8px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Product Categories -->
+  <section class="section section-light">
+    <div class="container fade-up">
+      <div class="text-center mb-48 text-dark">
+        <h2>Explore Our Product Range</h2>
+        <p class="text-muted max-w-2xl mx-auto">Discover our diverse catalog of premium home furnishings tailored for
+          the global market.</p>
+      </div>
+
+      <div class="grid grid-cols-4 gap-24">
+        <a href="products.html" class="category-card">
+          <img src="assets/images/thumbs/01.jpg" alt="Rugs & Carpets">
+          <div class="category-overlay">
+            <h3 class="category-title">Rugs & Carpets</h3>
+          </div>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="assets/images/thumbs/05.jpg" alt="Throws & Bed Covers">
+          <div class="category-overlay">
+            <h3 class="category-title">Throws & Covers</h3>
+          </div>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="assets/images/thumbs/08.jpg" alt="Cushions">
+          <div class="category-overlay">
+            <h3 class="category-title">Cushions</h3>
+          </div>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="assets/images/thumbs/12.jpg" alt="Home Textiles">
+          <div class="category-overlay">
+            <h3 class="category-title">Home Textiles</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Featured Products (Gallery/Showcase preview) -->
+  <section class="section">
+    <div class="container fade-up">
+      <div class="flex items-center justify-between mb-48">
+        <h2>Featured Export Products</h2>
+        <a href="products.html" class="text-primary font-medium">View Full Catalog <i
+            class="fa-solid fa-arrow-right ml-8"></i></a>
+      </div>
+
+      <div class="grid grid-cols-4 gap-24">
+        <!-- Reusing thumbs 02, 06, 09, 15 -->
+        <div class="card product-card">
+          <div class="product-img-wrap"><img src="assets/images/thumbs/02.jpg" alt="Product AI-02">
+          </div>
+          <div class="product-info">
+            <h4 class="mb-8" style="font-family: var(--font-family-sans); font-size: 16px;">Design AI-02</h4>
+            <a href="products.html" class="btn btn-outline-dark"
+              style="padding: 8px 16px; font-size: 14px; width: 100%;">View Product</a>
+          </div>
+        </div>
+        <div class="card product-card">
+          <div class="product-img-wrap"><img src="assets/images/thumbs/06.jpg" alt="Product AI-06">
+          </div>
+          <div class="product-info">
+            <h4 class="mb-8" style="font-family: var(--font-family-sans); font-size: 16px;">Design AI-06</h4>
+            <a href="products.html" class="btn btn-outline-dark"
+              style="padding: 8px 16px; font-size: 14px; width: 100%;">View Product</a>
+          </div>
+        </div>
+        <div class="card product-card">
+          <div class="product-img-wrap"><img src="assets/images/thumbs/09.jpg" alt="Product AI-09">
+          </div>
+          <div class="product-info">
+            <h4 class="mb-8" style="font-family: var(--font-family-sans); font-size: 16px;">Design AI-09</h4>
+            <a href="products.html" class="btn btn-outline-dark"
+              style="padding: 8px 16px; font-size: 14px; width: 100%;">View Product</a>
+          </div>
+        </div>
+        <div class="card product-card">
+          <div class="product-img-wrap"><img src="assets/images/thumbs/15.jpg" alt="Product AI-15">
+          </div>
+          <div class="product-info">
+            <h4 class="mb-8" style="font-family: var(--font-family-sans); font-size: 16px;">Design AI-15</h4>
+            <a href="products.html" class="btn btn-outline-dark"
+              style="padding: 8px 16px; font-size: 14px; width: 100%;">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Manufacturing Process -->
+  <section class="section section-light">
+    <div class="container fade-up">
+      <div class="text-center mb-48">
+        <h2>In-House Manufacturing Process</h2>
+        <p class="text-muted max-w-2xl mx-auto">We maintain strict quality control at every stage of production within
+          our own facilities.</p>
+      </div>
+
+      <div class="grid grid-cols-4 gap-32">
+        <div>
+          <div class="process-icon-box"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">1. Material Sourcing</h3>
+          <p class="text-muted text-small">Selecting only premium grade yarn and raw materials for optimal strength and
+            dye absorption.</p>
+        </div>
+        <div>
+          <div class="process-icon-box"><i class="fa-solid fa-palette"></i></div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">2. Custom Dyeing</h3>
+          <p class="text-muted text-small">In-house color matching and dyeing facilities ensuring consistent, colorfast
+            results.</p>
+        </div>
+        <div>
+          <div class="process-icon-box"><i class="fa-solid fa-rug"></i></div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">3. Weaving & Tufting</h3>
+          <p class="text-muted text-small">Utilizing our 160 active looms to craft precise, durable patterns with expert
+            artisans.</p>
+        </div>
+        <div>
+          <div class="process-icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3 style="font-size: 20px; margin-bottom: 8px;">4. Quality Dispatch</h3>
+          <p class="text-muted text-small">Rigorous dust-free inspection, clipping, and secure packing for international
+            shipping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 & 7. Certifications / Trust & Global Export -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-2 gap-64 items-center fade-up">
+        <div
+          style="background-color: var(--color-section-light); padding: var(--spacing-48); border-radius: var(--radius-md);">
+          <h2 class="mb-24">Global Presence</h2>
+          <p class="text-muted mb-24">We are a trusted supplier for major importers, wholesalers, and retail chains
+            across the globe.</p>
+          <ul class="highlight-list">
+            <li><i class="fa-solid fa-globe"></i> <strong>Europe:</strong> Norway, Sweden, UK, Germany, Spain, Poland
+            </li>
+            <li><i class="fa-solid fa-globe"></i> <strong>Americas:</strong> USA, Canada, South America</li>
+            <li><i class="fa-solid fa-ship"></i> Seamless logistics and on-time global delivery</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-24">Certifications & Trust</h2>
+          <p class="text-muted mb-32">Our commitment to excellence is validated by international standards for both
+            quality management and social accountability.</p>
+
+          <div class="flex gap-24">
+            <div class="card p-16" style="padding: 16px; border: 1px solid #EAEAEA; flex: 1; text-align: center;">
+              <img src="assets/images/9000-2008.jpg" alt="ISO Certification"
+                style="height: 120px; margin: 0 auto 16px auto;">
+              <h4 style="font-family: var(--font-family-sans); font-size: 14px; font-weight: 600;">ISO 9001:2008</h4>
+            </div>
+            <div class="card p-16" style="padding: 16px; border: 1px solid #EAEAEA; flex: 1; text-align: center;">
+              <img src="assets/images/newcb1.jpg" alt="SA Certification"
+                style="height: 120px; margin: 0 auto 16px auto;">
+              <h4 style="font-family: var(--font-family-sans); font-size: 14px; font-weight: 600;">SA 8000:2012</h4>
+            </div>
+          </div>
+          <div class="text-right mt-16">
+            <a href="certificates.html" class="text-primary font-medium text-small">View Full Certifications &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Contact CTA -->
+  <section class="section section-padding cta-banner text-center">
+    <div class="container fade-up">
+      <h2 style="font-size: var(--font-size-h2);">Ready for a Reliable Manufacturing Partnership?</h2>
+      <p class="mb-32 max-w-2xl mx-auto text-light" style="color: white; font-size: 18px;">Contact us today to request
+        samples, discuss custom requirements, or get a wholesale quote.</p>
+      <div class="flex gap-16 justify-center">
+        <a href="contact.html" class="btn" style="background: white; color: var(--color-primary);">Request a Quote</a>
+        <a href="mailto:artindiatex@artindiatex.com" class="btn btn-outline"
+          style="border-color: white; color: white;">Email Us Directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Footer (4 Columns) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-cols-4 gap-32">
+        <!-- Col 1: Company -->
+        <div>
+          <a href="index.html" class="logo mb-24" style="color: white;">
+            <i class="fa-solid fa-gem logo-icon"></i>
+            <span>Art India Tex</span>
+          </a>
+          <p>Premium Manufacturer and Exporter of exclusive handmade rugs, carpets, and home textiles since 1980.</p>
+        </div>
+
+        <!-- Col 2: Products -->
+        <div>
+          <h3>Products</h3>
+          <ul class="footer-links">
+            <li><a href="products.html">Tufted Carpets</a></li>
+            <li><a href="products.html">Leather & Woolen Rugs</a></li>
+            <li><a href="products.html">Throws & Bed Covers</a></li>
+            <li><a href="products.html">Cushions & Curtains</a></li>
+            <li><a href="products.html">Custom Textiles</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="certificates.html">Certifications</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h3>Contact Us</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>V-306, Street No. 22, Vijay Park Maujpur, Delhi - 110053, India</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91-11-22910705<br>+91-9136741997</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>artindiatex@artindiatex.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Art India Tex. Designed for Global Export.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
